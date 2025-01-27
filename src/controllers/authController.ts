@@ -6,6 +6,7 @@ import createTokenUser from '../utils/createTokenUser'
 import { attachCookiesToResponse } from '../utils/attachCookies'
 import Token from '../models/Token'
 import { randomBytes } from 'crypto'
+import sendVerificationEmail from '../utils/sendEmailVerification'
 
 const register = async (
   req: Request,
@@ -24,15 +25,54 @@ const register = async (
       throw new CustomError.BadRequestError('Email already registered')
     }
 
-    const user: IUser = new User({ name, email, password, role })
+    const verificationToken = randomBytes(40).toString('hex')
+
+    const user: IUser = new User({
+      name,
+      email,
+      password,
+      role,
+      verificationToken,
+    })
+
+    sendVerificationEmail({
+      name: user.name,
+      email: user.email,
+      verificationToken: user.verificationToken,
+      origin: process.env.ORIGIN,
+    })
+
     await user.save()
 
     res
       .status(StatusCodes.CREATED)
-      .json({ status: 'Success', message: 'User has been registered' })
+      .json({ status: 'Success', message: 'You have been registered' })
   } catch (error) {
     next(error)
   }
+}
+
+const verifyEmail = async (req: Request, res: Response) => {
+  const { verificationToken, email } = req.body
+  const user = await User.findOne({ email })
+
+  if (!user) {
+    throw new CustomError.NotFoundError('User not found')
+  }
+
+  if (user.verificationToken !== verificationToken) {
+    throw new CustomError.BadRequestError(
+      'The verification token does not match'
+    )
+  }
+
+  user.isVerified = true
+  user.verifiedAt = new Date(Date.now())
+  user.verificationToken = ''
+
+  await user.save()
+
+  res.status(200).json({ message: 'Email is verified' })
 }
 
 const login = async (
@@ -44,7 +84,7 @@ const login = async (
     const { email, password } = req.body
     if (!email || !password) {
       throw new CustomError.BadRequestError(
-        'Both email and password are require'
+        'Both email and password are required'
       )
     }
 
@@ -56,6 +96,10 @@ const login = async (
     const checkPassword = await user.comparePassword(password)
     if (!checkPassword) {
       throw new CustomError.UnauthenticatedError('Incorrect password')
+    }
+
+    if (!user.isVerified) {
+      throw new CustomError.UnauthenticatedError('Please verify your email')
     }
 
     const tokenUser = createTokenUser(user)
@@ -113,4 +157,4 @@ const logout = async (req: Request, res: Response, next: NextFunction) => {
   }
 }
 
-export { register, login, logout }
+export { register, verifyEmail, login, logout }
