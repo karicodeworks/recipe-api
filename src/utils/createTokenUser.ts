@@ -1,6 +1,6 @@
-import { IUser } from '../models/Users'
+import { user } from '../models/Users'
 
-const createTokenUser = (user: IUser) => {
+const createTokenUser = (user: user) => {
   return { userId: user._id, name: user.name, role: user.role }
 }
 

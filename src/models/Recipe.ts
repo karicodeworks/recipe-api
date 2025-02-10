@@ -1,70 +1,43 @@
-import mongoose, { Schema, Document } from 'mongoose'
+import mongoose from 'mongoose'
 
-interface IStep {
-  stepNumber: number
-  instruction: string
-  time?: number
-}
-
-interface IIngredient {
-  ingredientNumber: number
-  name: string
-  quantity: number
-  unit: string
-  type?: string
-}
-
-interface IRecipe extends Document {
-  title: string
-  description: string
-  ingredients: IIngredient[]
-  instructions: IStep[]
-  image: string
-  category?: Schema.Types.ObjectId
-  servings: number
-  user: Schema.Types.ObjectId
-}
-
-const RecipeSchema = new Schema<IRecipe>(
+const RecipeSchema = new mongoose.Schema(
   {
     title: {
       type: String,
       required: true,
+      trim: true,
     },
     description: {
       type: String,
       required: true,
     },
-    ingredients: [
-      {
-        ingredientNumber: { type: Number, required: true },
-        name: { type: String, required: true },
-        quantity: { type: Number, required: true },
-        unit: { type: String, required: true },
-        type: { type: String, require: false },
-      },
-    ],
-    instructions: [
-      {
-        stepNumber: { type: Number, required: true },
-        instruction: { type: String, required: true },
-        time: { type: Number, required: false },
-      },
-    ],
-    image: {
+    imageUrl: {
       type: String,
       required: false,
     },
+    ingredients: [
+      {
+        type: String,
+        required: true,
+      },
+    ],
+    method: [
+      {
+        type: String,
+        required: true,
+      },
+    ],
     category: {
-      type: Schema.Types.ObjectId,
-      ref: 'Category',
-      required: false,
-    },
-    servings: {
-      type: Number,
+      type: String,
+      enum: ['Breakfast', 'Lunch', 'Dinner', 'Dessert'],
       required: true,
     },
-    user: {
+    difficulty: {
+      type: String,
+      enum: ['Easy', 'Medium', 'Hard'],
+      required: true,
+    },
+    author: {
       type: mongoose.Schema.Types.ObjectId,
       ref: 'User',
       required: true,
@@ -73,6 +46,6 @@ const RecipeSchema = new Schema<IRecipe>(
   { timestamps: true }
 )
 
-const Recipe = mongoose.model<IRecipe>('Recipe', RecipeSchema)
+const Recipe = mongoose.model('Recipe', RecipeSchema)
 
 export default Recipe

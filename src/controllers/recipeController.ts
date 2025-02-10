@@ -1,4 +1,4 @@
-import { NextFunction, Request, Response } from 'express'
+import { NextFunction, query, Request, Response } from 'express'
 import Recipe from '../models/Recipe'
 import { StatusCodes } from 'http-status-codes'
 import CustomError from '../errors'
@@ -13,11 +13,41 @@ const createRecipe = async (
   next: NextFunction
 ) => {
   try {
+    const {
+      title,
+      description,
+      imageUrl,
+      ingredients,
+      method,
+      category,
+      difficulty,
+    } = req.body
+
+    if (
+      !title ||
+      !description ||
+      !imageUrl ||
+      !Array.isArray(ingredients) ||
+      !method ||
+      !category
+    ) {
+      throw new CustomError.BadRequestError('The input data is invalid')
+    }
+
     if (req.user) {
-      req.body.user = req.user.userId
-      const recipe = new Recipe(req.body)
+      const author = req.user.userId
+      const recipe = new Recipe({
+        title,
+        description,
+        imageUrl,
+        ingredients,
+        method,
+        category,
+        difficulty,
+        author,
+      })
       recipe.save()
-      res.status(StatusCodes.OK).json({ recipe })
+      res.status(StatusCodes.OK).json({ message: 'Recipe added successfully' })
     } else {
       throw new CustomError.UnauthenticatedError('User not authenticated')
     }
@@ -32,7 +62,14 @@ const getAllRecipes = async (
   next: NextFunction
 ) => {
   try {
-    const recipes = await Recipe.find({})
+    const { search, category, difficulty } = req.query
+    let query: any = {}
+
+    if (search) query.title = { $regex: search, $options: 'i' }
+    if (category) query.category = category
+    if (difficulty) query.difficulty = difficulty
+
+    const recipes = await Recipe.find(query)
     res.status(StatusCodes.OK).json({ recipes })
   } catch (error) {
     next(error)
@@ -78,7 +115,7 @@ const updateRecipe = async (
       throw new CustomError.NotFoundError('Recipe not found')
     }
 
-    checkPermission(req.user, recipe.user.toString())
+    checkPermission(req.user, recipe.author.toString())
 
     const updatedRecipe = await Recipe.findByIdAndUpdate(
       recipeId,
@@ -105,7 +142,7 @@ const deleteRecipe = async (
       throw new CustomError.NotFoundError(`No recipe with id ${recipeId}`)
     }
 
-    checkPermission(req.user, recipe.user.toString())
+    checkPermission(req.user, recipe.author.toString())
 
     await recipe.deleteOne()
 
@@ -119,7 +156,7 @@ const deleteRecipe = async (
 
 const uploadImage = async (req: Request, res: Response, next: NextFunction) => {
   try {
-    if (!req.files || req.files.image) {
+    if (!req.files || !req.files.image) {
       throw new CustomError.BadRequestError('No image file uploaded')
     }
 

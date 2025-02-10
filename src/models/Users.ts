@@ -1,13 +1,12 @@
-import mongoose, { Document, Schema, Types } from 'mongoose'
+import mongoose from 'mongoose'
 import validator from 'validator'
 import bcryptjs from 'bcryptjs'
 
-export interface IUser extends Document {
-  _id: Types.ObjectId
-  userId: string
+export interface user extends mongoose.Document {
+  _id: mongoose.Schema.Types.ObjectId
   name: string
-  email: string
   password: string
+  email: string
   role: string
   verificationToken: string
   isVerified: boolean
@@ -15,7 +14,7 @@ export interface IUser extends Document {
   comparePassword(candidatePassword: string): Promise<boolean>
 }
 
-const UserSchema: Schema = new Schema<IUser>({
+const UserSchema = new mongoose.Schema({
   name: {
     type: String,
     required: [true, 'Provide user name'],
@@ -50,9 +49,21 @@ const UserSchema: Schema = new Schema<IUser>({
   verifiedAt: {
     type: Date,
   },
+  recipes: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Recipe',
+    },
+  ],
+  reviews: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Review',
+    },
+  ],
 })
 
-UserSchema.pre<IUser>('save', async function () {
+UserSchema.pre('save', async function () {
   if (!this.isModified('password')) return
   const salt = await bcryptjs.genSalt(10)
   this.password = await bcryptjs.hash(this.password, salt)
@@ -64,5 +75,5 @@ UserSchema.methods.comparePassword = async function (
   return await bcryptjs.compare(candidatePassword, this.password)
 }
 
-const User = mongoose.model<IUser>('User', UserSchema)
+const User = mongoose.model<user>('User', UserSchema)
 export default User

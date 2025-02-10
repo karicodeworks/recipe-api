@@ -19,6 +19,6 @@ router
   .patch([authenticateUser], updateRecipe)
   .delete([authenticateUser], deleteRecipe)
 
-router.route('/upload-image').post([authenticateUser], uploadImage)
+router.route('/image-upload').post([authenticateUser], uploadImage)
 
 export default router

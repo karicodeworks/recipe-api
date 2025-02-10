@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from 'express'
-import User, { IUser } from '../models/Users'
+import User from '../models/Users'
 import { StatusCodes } from 'http-status-codes'
 import CustomError from '../errors'
 import createTokenUser from '../utils/createTokenUser'
@@ -27,7 +27,7 @@ const register = async (
 
     const verificationToken = randomBytes(40).toString('hex')
 
-    const user: IUser = new User({
+    const user = new User({
       name,
       email,
       password,
