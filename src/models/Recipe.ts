@@ -1,6 +1,19 @@
-import mongoose from 'mongoose'
+import mongoose, { Schema, Document } from 'mongoose'
 
-const RecipeSchema = new mongoose.Schema(
+export interface IRecipe extends Document {
+  title: string
+  description: string
+  imageUrl: string
+  ingredients: string[]
+  method: string[]
+  category: string
+  difficulty: string
+  author: mongoose.Schema.Types.ObjectId
+  createdAt?: Date
+  updatedAt?: Date
+}
+
+const RecipeSchema = new Schema<IRecipe>(
   {
     title: {
       type: String,
@@ -46,6 +59,6 @@ const RecipeSchema = new mongoose.Schema(
   { timestamps: true }
 )
 
-const Recipe = mongoose.model('Recipe', RecipeSchema)
+const Recipe = mongoose.model<IRecipe>('Recipe', RecipeSchema)
 
 export default Recipe

@@ -1,5 +1,5 @@
 import { NextFunction, query, Request, Response } from 'express'
-import Recipe from '../models/Recipe'
+import Recipe, { IRecipe } from '../models/Recipe'
 import { StatusCodes } from 'http-status-codes'
 import CustomError from '../errors'
 import { checkPermission } from '../utils'
@@ -62,14 +62,30 @@ const getAllRecipes = async (
   next: NextFunction
 ) => {
   try {
-    const { search, category, difficulty } = req.query
+    const { search, category, difficulty, sort } = req.query
     let query: any = {}
 
     if (search) query.title = { $regex: search, $options: 'i' }
     if (category) query.category = category
     if (difficulty) query.difficulty = difficulty
 
-    const recipes = await Recipe.find(query)
+    let recipesObj = Recipe.find(query)
+
+    if (sort === 'latest') {
+      recipesObj = recipesObj.sort({ createdAt: -1 })
+    }
+    if (sort === 'oldest') {
+      recipesObj = recipesObj.sort({ createdAt: 1 })
+    }
+    if (sort === 'a-z') {
+      recipesObj = recipesObj.sort({ title: 1 })
+    }
+    if (sort === 'z-a') {
+      recipesObj = recipesObj.sort({ title: -1 })
+    }
+
+    const recipes = await recipesObj
+
     res.status(StatusCodes.OK).json({ recipes })
   } catch (error) {
     next(error)
