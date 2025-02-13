@@ -62,14 +62,14 @@ const getAllRecipes = async (
   next: NextFunction
 ) => {
   try {
-    const { search, category, difficulty, sort } = req.query
+    const { search, category, difficulty, sort, page = '1', limit = '10' } = req.query
     let query: any = {}
 
     if (search) query.title = { $regex: search, $options: 'i' }
     if (category) query.category = category
     if (difficulty) query.difficulty = difficulty
 
-    let recipesObj = Recipe.find(query)
+    let recipesObj = Recipe.find(query).populate('author','name')
 
     if (sort === 'latest') {
       recipesObj = recipesObj.sort({ createdAt: -1 })
@@ -84,9 +84,16 @@ const getAllRecipes = async (
       recipesObj = recipesObj.sort({ title: -1 })
     }
 
-    const recipes = await recipesObj
+    const pageNumber = Math.max(1,Number(page))
+    const limitNumber = Math.max(1,Number(limit))
+    
+    const recipes = await recipesObj.skip((pageNumber - 1) * limitNumber).limit(limitNumber)
+    const totalRecipes = await Recipe.countDocuments(query)
+    const totalPages = Math.ceil(totalRecipes / limitNumber)
 
-    res.status(StatusCodes.OK).json({ recipes })
+
+
+    res.status(StatusCodes.OK).json({ recipes,currentPage:pageNumber, totalRecipes, totalPages })
   } catch (error) {
     next(error)
   }
