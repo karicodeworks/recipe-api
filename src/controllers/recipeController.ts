@@ -1,11 +1,11 @@
-import { NextFunction, query, Request, Response } from 'express'
-import Recipe, { IRecipe } from '../models/Recipe'
-import { StatusCodes } from 'http-status-codes'
-import CustomError from '../errors'
-import { checkPermission } from '../utils'
-import { v2 as cloudinary } from 'cloudinary'
-import fileUpload from 'express-fileupload'
-import fs from 'fs'
+import { NextFunction, query, Request, Response } from "express"
+import Recipe, { IRecipe } from "../models/Recipe"
+import { StatusCodes } from "http-status-codes"
+import CustomError from "../errors"
+import { checkPermission } from "../utils"
+import { v2 as cloudinary } from "cloudinary"
+import fileUpload from "express-fileupload"
+import fs from "fs"
 
 const createRecipe = async (
   req: Request,
@@ -31,7 +31,7 @@ const createRecipe = async (
       !method ||
       !category
     ) {
-      throw new CustomError.BadRequestError('The input data is invalid')
+      throw new CustomError.BadRequestError("The input data is invalid")
     }
 
     if (req.user) {
@@ -47,9 +47,9 @@ const createRecipe = async (
         author,
       })
       recipe.save()
-      res.status(StatusCodes.OK).json({ message: 'Recipe added successfully' })
+      res.status(StatusCodes.OK).json({ message: "Recipe added successfully" })
     } else {
-      throw new CustomError.UnauthenticatedError('User not authenticated')
+      throw new CustomError.UnauthenticatedError("User not authenticated")
     }
   } catch (error) {
     next(error)
@@ -62,38 +62,47 @@ const getAllRecipes = async (
   next: NextFunction
 ) => {
   try {
-    const { search, category, difficulty, sort, page = '1', limit = '10' } = req.query
+    const {
+      search,
+      category,
+      difficulty,
+      sort,
+      page = "1",
+      limit = "10",
+    } = req.query
     let query: any = {}
 
-    if (search) query.title = { $regex: search, $options: 'i' }
+    if (search) query.title = { $regex: search, $options: "i" }
     if (category) query.category = category
     if (difficulty) query.difficulty = difficulty
 
-    let recipesObj = Recipe.find(query).populate('author','name')
+    let recipesObj = Recipe.find(query).populate("author", "name")
 
-    if (sort === 'latest') {
+    if (sort === "latest") {
       recipesObj = recipesObj.sort({ createdAt: -1 })
     }
-    if (sort === 'oldest') {
+    if (sort === "oldest") {
       recipesObj = recipesObj.sort({ createdAt: 1 })
     }
-    if (sort === 'a-z') {
+    if (sort === "a-z") {
       recipesObj = recipesObj.sort({ title: 1 })
     }
-    if (sort === 'z-a') {
+    if (sort === "z-a") {
       recipesObj = recipesObj.sort({ title: -1 })
     }
 
-    const pageNumber = Math.max(1,Number(page))
-    const limitNumber = Math.max(1,Number(limit))
-    
-    const recipes = await recipesObj.skip((pageNumber - 1) * limitNumber).limit(limitNumber)
+    const pageNumber = Math.max(1, Number(page))
+    const limitNumber = Math.max(1, Number(limit))
+
+    const recipes = await recipesObj
+      .skip((pageNumber - 1) * limitNumber)
+      .limit(limitNumber)
     const totalRecipes = await Recipe.countDocuments(query)
     const totalPages = Math.ceil(totalRecipes / limitNumber)
 
-
-
-    res.status(StatusCodes.OK).json({ recipes,currentPage:pageNumber, totalRecipes, totalPages })
+    res
+      .status(StatusCodes.OK)
+      .json({ recipes, currentPage: pageNumber, totalRecipes, totalPages })
   } catch (error) {
     next(error)
   }
@@ -127,15 +136,15 @@ const updateRecipe = async (
       !description ||
       !Array.isArray(ingredients) ||
       !Array.isArray(instructions) ||
-      typeof servings !== 'number'
+      typeof servings !== "number"
     ) {
-      throw new CustomError.BadRequestError('The input data is invalid')
+      throw new CustomError.BadRequestError("The input data is invalid")
     }
 
     const recipe = await Recipe.findOne({ _id: recipeId })
 
     if (!recipe) {
-      throw new CustomError.NotFoundError('Recipe not found')
+      throw new CustomError.NotFoundError("Recipe not found")
     }
 
     checkPermission(req.user, recipe.author.toString())
@@ -171,7 +180,7 @@ const deleteRecipe = async (
 
     res
       .status(StatusCodes.OK)
-      .json({ status: 'Success', message: 'Recipe deleted successfully' })
+      .json({ status: "Success", message: "Recipe deleted successfully" })
   } catch (error) {
     next(error)
   }
@@ -180,14 +189,14 @@ const deleteRecipe = async (
 const uploadImage = async (req: Request, res: Response, next: NextFunction) => {
   try {
     if (!req.files || !req.files.image) {
-      throw new CustomError.BadRequestError('No image file uploaded')
+      throw new CustomError.BadRequestError("No image file uploaded")
     }
 
     const imageFile = req.files.image as fileUpload.UploadedFile
 
     const result = await cloudinary.uploader.upload(imageFile.tempFilePath, {
       use_filename: true,
-      folder: 'recipe-images',
+      folder: "recipe-images",
     })
     fs.unlinkSync(imageFile.tempFilePath)
     res.status(StatusCodes.OK).json({ image: { src: result.secure_url } })

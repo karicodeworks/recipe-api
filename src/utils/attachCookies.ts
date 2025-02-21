@@ -1,5 +1,5 @@
-import { Response } from 'express'
-import jwt from 'jsonwebtoken'
+import { Response } from "express"
+import jwt from "jsonwebtoken"
 
 interface User {
   userId?: any
@@ -36,20 +36,20 @@ const attachCookiesToResponse = ({
   const oneHour = 1000 * 60 * 60
   const thirtyDays: number = 1000 * 60 * 60 * 24 * 30
 
-  res.cookie('accessToken', accessTokenJWT, {
+  res.cookie("accessToken", accessTokenJWT, {
     httpOnly: true,
     expires: new Date(Date.now() + oneHour),
-    secure: process.env.NODE_ENV === 'production',
+    secure: process.env.NODE_ENV === "production",
     signed: true,
-    sameSite: 'strict',
+    sameSite: "strict",
   })
 
-  res.cookie('refreshToken', refreshTokenJWT, {
+  res.cookie("refreshToken", refreshTokenJWT, {
     httpOnly: true,
     expires: new Date(Date.now() + thirtyDays),
-    secure: process.env.NODE_ENV === 'production',
+    secure: process.env.NODE_ENV === "production",
     signed: true,
-    sameSite: 'strict',
+    sameSite: "strict",
   })
 }
 
