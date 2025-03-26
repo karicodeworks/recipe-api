@@ -1,0 +1,1068 @@
+[
+  {
+    "title": "Apple Pie",
+    "description": "Ideal for a healthy meal.",
+    "image": "https://source.unsplash.com/400x300/?food,0",
+    "ingredients": ["Flour", "Eggs", "Milk", "Sugar", "Butter"],
+    "method": "Simmer for 30 minutes on low heat.",
+    "category": "Dessert",
+    "difficulty": "Easy",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Lamb Chops",
+    "description": "Ideal for a healthy meal.",
+    "image": "https://source.unsplash.com/400x300/?food,1",
+    "ingredients": ["Flour", "Eggs", "Milk", "Sugar", "Butter"],
+    "method": "Simmer for 30 minutes on low heat.",
+    "category": "Lunch",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Huevos Rancheros",
+    "description": "A delicious and easy-to-make dish.",
+    "image": "https://source.unsplash.com/400x300/?food,2",
+    "ingredients": ["Salmon", "Lemon", "Herbs", "Salt", "Pepper"],
+    "method": "Roast in the oven for 40 minutes.",
+    "category": "Dinner",
+    "difficulty": "Easy",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Eggs Benedict",
+    "description": "Rich in flavor and nutrition.",
+    "image": "https://source.unsplash.com/400x300/?food,3",
+    "ingredients": ["Flour", "Eggs", "Milk", "Sugar", "Butter"],
+    "method": "Saute the onions and garlic, then add the rest.",
+    "category": "Breakfast",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Huevos Rancheros",
+    "description": "Bursting with taste and texture.",
+    "image": "https://source.unsplash.com/400x300/?food,4",
+    "ingredients": ["Bread", "Cheese", "Tomatoes", "Basil", "Olive Oil"],
+    "method": "Bake at 180C for 25 minutes.",
+    "category": "Dinner",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Brownies",
+    "description": "Quick and simple recipe.",
+    "image": "https://source.unsplash.com/400x300/?food,5",
+    "ingredients": ["Apples", "Cinnamon", "Sugar", "Butter", "Flour"],
+    "method": "Saute the onions and garlic, then add the rest.",
+    "category": "Breakfast",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Banana Bread",
+    "description": "Bursting with taste and texture.",
+    "image": "https://source.unsplash.com/400x300/?food,6",
+    "ingredients": ["Flour", "Eggs", "Milk", "Sugar", "Butter"],
+    "method": "Roast in the oven for 40 minutes.",
+    "category": "Lunch",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Sushi Rolls",
+    "description": "A classic dish with a modern twist.",
+    "image": "https://source.unsplash.com/400x300/?food,7",
+    "ingredients": ["Apples", "Cinnamon", "Sugar", "Butter", "Flour"],
+    "method": "Mix all ingredients and cook until golden brown.",
+    "category": "Breakfast",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Pho",
+    "description": "A must-try dish for food lovers.",
+    "image": "https://source.unsplash.com/400x300/?food,8",
+    "ingredients": [
+      "Milk",
+      "Cocoa Powder",
+      "Sugar",
+      "Whipped Cream",
+      "Vanilla"
+    ],
+    "method": "Roast in the oven for 40 minutes.",
+    "category": "Dessert",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Huevos Rancheros",
+    "description": "A family favorite!",
+    "image": "https://source.unsplash.com/400x300/?food,9",
+    "ingredients": ["Apples", "Cinnamon", "Sugar", "Butter", "Flour"],
+    "method": "Fry until crispy and golden.",
+    "category": "Breakfast",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Stuffed Peppers",
+    "description": "A family favorite!",
+    "image": "https://source.unsplash.com/400x300/?food,10",
+    "ingredients": ["Chicken", "Garlic", "Onion", "Spices", "Olive Oil"],
+    "method": "Grill until cooked through.",
+    "category": "Dessert",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Meatballs",
+    "description": "Bursting with taste and texture.",
+    "image": "https://source.unsplash.com/400x300/?food,11",
+    "ingredients": ["Flour", "Eggs", "Milk", "Sugar", "Butter"],
+    "method": "Simmer for 30 minutes on low heat.",
+    "category": "Breakfast",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Spaghetti Bolognese",
+    "description": "A family favorite!",
+    "image": "https://source.unsplash.com/400x300/?food,12",
+    "ingredients": ["Flour", "Eggs", "Milk", "Sugar", "Butter"],
+    "method": "Chill in the fridge before serving.",
+    "category": "Lunch",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Beetroot Salad",
+    "description": "A delicious and easy-to-make dish.",
+    "image": "https://source.unsplash.com/400x300/?food,13",
+    "ingredients": ["Bread", "Cheese", "Tomatoes", "Basil", "Olive Oil"],
+    "method": "Bake at 180C for 25 minutes.",
+    "category": "Lunch",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Dutch Baby Pancake",
+    "description": "Rich in flavor and nutrition.",
+    "image": "https://source.unsplash.com/400x300/?food,14",
+    "ingredients": ["Tomatoes", "Basil", "Parmesan", "Pasta", "Salt"],
+    "method": "Chill in the fridge before serving.",
+    "category": "Lunch",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Croissant",
+    "description": "A delicious and easy-to-make dish.",
+    "image": "https://source.unsplash.com/400x300/?food,15",
+    "ingredients": [
+      "Milk",
+      "Cocoa Powder",
+      "Sugar",
+      "Whipped Cream",
+      "Vanilla"
+    ],
+    "method": "Roast in the oven for 40 minutes.",
+    "category": "Breakfast",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Clam Chowder",
+    "description": "A must-try dish for food lovers.",
+    "image": "https://source.unsplash.com/400x300/?food,16",
+    "ingredients": ["Chicken", "Garlic", "Onion", "Spices", "Olive Oil"],
+    "method": "Fry until crispy and golden.",
+    "category": "Dinner",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Steak Frites",
+    "description": "Perfect for any occasion.",
+    "image": "https://source.unsplash.com/400x300/?food,17",
+    "ingredients": [
+      "Milk",
+      "Cocoa Powder",
+      "Sugar",
+      "Whipped Cream",
+      "Vanilla"
+    ],
+    "method": "Fry until crispy and golden.",
+    "category": "Dinner",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Chicken Satay",
+    "description": "A family favorite!",
+    "image": "https://source.unsplash.com/400x300/?food,18",
+    "ingredients": ["Tomatoes", "Basil", "Parmesan", "Pasta", "Salt"],
+    "method": "Bake at 180C for 25 minutes.",
+    "category": "Dessert",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Mac and Cheese",
+    "description": "Quick and simple recipe.",
+    "image": "https://source.unsplash.com/400x300/?food,19",
+    "ingredients": ["Salmon", "Lemon", "Herbs", "Salt", "Pepper"],
+    "method": "Grill until cooked through.",
+    "category": "Dessert",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Churros",
+    "description": "Bursting with taste and texture.",
+    "image": "https://source.unsplash.com/400x300/?food,20",
+    "ingredients": ["Tomatoes", "Basil", "Parmesan", "Pasta", "Salt"],
+    "method": "Bake at 180C for 25 minutes.",
+    "category": "Dessert",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Pasta Primavera",
+    "description": "Ideal for a healthy meal.",
+    "image": "https://source.unsplash.com/400x300/?food,21",
+    "ingredients": ["Chocolate", "Cream", "Sugar", "Vanilla", "Eggs"],
+    "method": "Chill in the fridge before serving.",
+    "category": "Dinner",
+    "difficulty": "Easy",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Cheesecake",
+    "description": "A must-try dish for food lovers.",
+    "image": "https://source.unsplash.com/400x300/?food,22",
+    "ingredients": ["Bread", "Cheese", "Tomatoes", "Basil", "Olive Oil"],
+    "method": "Fry until crispy and golden.",
+    "category": "Lunch",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Chicken Satay",
+    "description": "A classic dish with a modern twist.",
+    "image": "https://source.unsplash.com/400x300/?food,23",
+    "ingredients": ["Flour", "Eggs", "Milk", "Sugar", "Butter"],
+    "method": "Simmer for 30 minutes on low heat.",
+    "category": "Dessert",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Custard",
+    "description": "Quick and simple recipe.",
+    "image": "https://source.unsplash.com/400x300/?food,24",
+    "ingredients": [
+      "Milk",
+      "Cocoa Powder",
+      "Sugar",
+      "Whipped Cream",
+      "Vanilla"
+    ],
+    "method": "Grill until cooked through.",
+    "category": "Breakfast",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Quiche Lorraine",
+    "description": "Ideal for a healthy meal.",
+    "image": "https://source.unsplash.com/400x300/?food,25",
+    "ingredients": ["Tomatoes", "Basil", "Parmesan", "Pasta", "Salt"],
+    "method": "Mix all ingredients and cook until golden brown.",
+    "category": "Dinner",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Brownies",
+    "description": "Quick and simple recipe.",
+    "image": "https://source.unsplash.com/400x300/?food,26",
+    "ingredients": ["Bread", "Cheese", "Tomatoes", "Basil", "Olive Oil"],
+    "method": "Saute the onions and garlic, then add the rest.",
+    "category": "Dinner",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Cheesecake",
+    "description": "Ideal for a healthy meal.",
+    "image": "https://source.unsplash.com/400x300/?food,27",
+    "ingredients": ["Flour", "Eggs", "Milk", "Sugar", "Butter"],
+    "method": "Fry until crispy and golden.",
+    "category": "Lunch",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Zucchini Fritters",
+    "description": "Quick and simple recipe.",
+    "image": "https://source.unsplash.com/400x300/?food,28",
+    "ingredients": ["Tomatoes", "Basil", "Parmesan", "Pasta", "Salt"],
+    "method": "Bake at 180C for 25 minutes.",
+    "category": "Breakfast",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Crepes",
+    "description": "Bursting with taste and texture.",
+    "image": "https://source.unsplash.com/400x300/?food,29",
+    "ingredients": ["Bread", "Cheese", "Tomatoes", "Basil", "Olive Oil"],
+    "method": "Mix all ingredients and cook until golden brown.",
+    "category": "Lunch",
+    "difficulty": "Easy",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Ceviche",
+    "description": "Bursting with taste and texture.",
+    "image": "https://source.unsplash.com/400x300/?food,30",
+    "ingredients": ["Chocolate", "Cream", "Sugar", "Vanilla", "Eggs"],
+    "method": "Boil for 10 minutes and serve hot.",
+    "category": "Dinner",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Greek Yogurt Parfait",
+    "description": "Bursting with taste and texture.",
+    "image": "https://source.unsplash.com/400x300/?food,31",
+    "ingredients": ["Rice", "Vegetables", "Soy Sauce", "Eggs", "Chicken"],
+    "method": "Fry until crispy and golden.",
+    "category": "Lunch",
+    "difficulty": "Easy",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Clam Chowder",
+    "description": "A must-try dish for food lovers.",
+    "image": "https://source.unsplash.com/400x300/?food,32",
+    "ingredients": ["Bread", "Cheese", "Tomatoes", "Basil", "Olive Oil"],
+    "method": "Bake at 180C for 25 minutes.",
+    "category": "Breakfast",
+    "difficulty": "Easy",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Peach Cobbler",
+    "description": "Satisfying and wholesome.",
+    "image": "https://source.unsplash.com/400x300/?food,33",
+    "ingredients": ["Salmon", "Lemon", "Herbs", "Salt", "Pepper"],
+    "method": "Boil for 10 minutes and serve hot.",
+    "category": "Lunch",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Chicken Alfredo",
+    "description": "Quick and simple recipe.",
+    "image": "https://source.unsplash.com/400x300/?food,34",
+    "ingredients": ["Chocolate", "Cream", "Sugar", "Vanilla", "Eggs"],
+    "method": "Fry until crispy and golden.",
+    "category": "Breakfast",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Baked Ziti",
+    "description": "Ideal for a healthy meal.",
+    "image": "https://source.unsplash.com/400x300/?food,35",
+    "ingredients": ["Chocolate", "Cream", "Sugar", "Vanilla", "Eggs"],
+    "method": "Chill in the fridge before serving.",
+    "category": "Lunch",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Banana Bread",
+    "description": "Perfect for any occasion.",
+    "image": "https://source.unsplash.com/400x300/?food,36",
+    "ingredients": ["Salmon", "Lemon", "Herbs", "Salt", "Pepper"],
+    "method": "Roast in the oven for 40 minutes.",
+    "category": "Dessert",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Tomato Soup",
+    "description": "Satisfying and wholesome.",
+    "image": "https://source.unsplash.com/400x300/?food,37",
+    "ingredients": ["Rice", "Vegetables", "Soy Sauce", "Eggs", "Chicken"],
+    "method": "Boil for 10 minutes and serve hot.",
+    "category": "Breakfast",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Lamb Chops",
+    "description": "A classic dish with a modern twist.",
+    "image": "https://source.unsplash.com/400x300/?food,38",
+    "ingredients": ["Chicken", "Garlic", "Onion", "Spices", "Olive Oil"],
+    "method": "Simmer for 30 minutes on low heat.",
+    "category": "Dessert",
+    "difficulty": "Easy",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Butter Chicken",
+    "description": "Perfect for any occasion.",
+    "image": "https://source.unsplash.com/400x300/?food,39",
+    "ingredients": [
+      "Milk",
+      "Cocoa Powder",
+      "Sugar",
+      "Whipped Cream",
+      "Vanilla"
+    ],
+    "method": "Grill until cooked through.",
+    "category": "Breakfast",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Beef Stew",
+    "description": "Ideal for a healthy meal.",
+    "image": "https://source.unsplash.com/400x300/?food,40",
+    "ingredients": ["Chicken", "Garlic", "Onion", "Spices", "Olive Oil"],
+    "method": "Saute the onions and garlic, then add the rest.",
+    "category": "Breakfast",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Scrambled Eggs",
+    "description": "Bursting with taste and texture.",
+    "image": "https://source.unsplash.com/400x300/?food,41",
+    "ingredients": ["Bread", "Cheese", "Tomatoes", "Basil", "Olive Oil"],
+    "method": "Mix all ingredients and cook until golden brown.",
+    "category": "Breakfast",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Ceviche",
+    "description": "Rich in flavor and nutrition.",
+    "image": "https://source.unsplash.com/400x300/?food,42",
+    "ingredients": ["Salmon", "Lemon", "Herbs", "Salt", "Pepper"],
+    "method": "Boil for 10 minutes and serve hot.",
+    "category": "Lunch",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Borscht",
+    "description": "A must-try dish for food lovers.",
+    "image": "https://source.unsplash.com/400x300/?food,43",
+    "ingredients": ["Bread", "Cheese", "Tomatoes", "Basil", "Olive Oil"],
+    "method": "Grill until cooked through.",
+    "category": "Dessert",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Apple Pie",
+    "description": "A family favorite!",
+    "image": "https://source.unsplash.com/400x300/?food,44",
+    "ingredients": ["Bread", "Cheese", "Tomatoes", "Basil", "Olive Oil"],
+    "method": "Chill in the fridge before serving.",
+    "category": "Lunch",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Butter Chicken",
+    "description": "A must-try dish for food lovers.",
+    "image": "https://source.unsplash.com/400x300/?food,45",
+    "ingredients": ["Bread", "Cheese", "Tomatoes", "Basil", "Olive Oil"],
+    "method": "Chill in the fridge before serving.",
+    "category": "Dessert",
+    "difficulty": "Easy",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Blueberry Muffins",
+    "description": "A classic dish with a modern twist.",
+    "image": "https://source.unsplash.com/400x300/?food,46",
+    "ingredients": ["Tomatoes", "Basil", "Parmesan", "Pasta", "Salt"],
+    "method": "Saute the onions and garlic, then add the rest.",
+    "category": "Breakfast",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Steak Frites",
+    "description": "A classic dish with a modern twist.",
+    "image": "https://source.unsplash.com/400x300/?food,47",
+    "ingredients": ["Chicken", "Garlic", "Onion", "Spices", "Olive Oil"],
+    "method": "Fry until crispy and golden.",
+    "category": "Dinner",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Blueberry Muffins",
+    "description": "A delicious and easy-to-make dish.",
+    "image": "https://source.unsplash.com/400x300/?food,48",
+    "ingredients": ["Flour", "Eggs", "Milk", "Sugar", "Butter"],
+    "method": "Roast in the oven for 40 minutes.",
+    "category": "Lunch",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Beef Wellington",
+    "description": "Bursting with taste and texture.",
+    "image": "https://source.unsplash.com/400x300/?food,49",
+    "ingredients": ["Chocolate", "Cream", "Sugar", "Vanilla", "Eggs"],
+    "method": "Fry until crispy and golden.",
+    "category": "Dessert",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Quiche Lorraine",
+    "description": "A classic dish with a modern twist.",
+    "image": "https://source.unsplash.com/400x300/?food,50",
+    "ingredients": ["Tomatoes", "Basil", "Parmesan", "Pasta", "Salt"],
+    "method": "Fry until crispy and golden.",
+    "category": "Breakfast",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Beef Wellington",
+    "description": "Satisfying and wholesome.",
+    "image": "https://source.unsplash.com/400x300/?food,51",
+    "ingredients": ["Chocolate", "Cream", "Sugar", "Vanilla", "Eggs"],
+    "method": "Mix all ingredients and cook until golden brown.",
+    "category": "Breakfast",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Tuna Salad",
+    "description": "Ideal for a healthy meal.",
+    "image": "https://source.unsplash.com/400x300/?food,52",
+    "ingredients": ["Chocolate", "Cream", "Sugar", "Vanilla", "Eggs"],
+    "method": "Roast in the oven for 40 minutes.",
+    "category": "Dinner",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Mushroom Risotto",
+    "description": "Perfect for any occasion.",
+    "image": "https://source.unsplash.com/400x300/?food,53",
+    "ingredients": ["Salmon", "Lemon", "Herbs", "Salt", "Pepper"],
+    "method": "Roast in the oven for 40 minutes.",
+    "category": "Dessert",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Grilled Salmon",
+    "description": "Quick and simple recipe.",
+    "image": "https://source.unsplash.com/400x300/?food,54",
+    "ingredients": ["Apples", "Cinnamon", "Sugar", "Butter", "Flour"],
+    "method": "Simmer for 30 minutes on low heat.",
+    "category": "Dinner",
+    "difficulty": "Easy",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Vegetable Stir Fry",
+    "description": "Quick and simple recipe.",
+    "image": "https://source.unsplash.com/400x300/?food,55",
+    "ingredients": ["Bread", "Cheese", "Tomatoes", "Basil", "Olive Oil"],
+    "method": "Boil for 10 minutes and serve hot.",
+    "category": "Breakfast",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Key Lime Pie",
+    "description": "Bursting with taste and texture.",
+    "image": "https://source.unsplash.com/400x300/?food,56",
+    "ingredients": ["Bread", "Cheese", "Tomatoes", "Basil", "Olive Oil"],
+    "method": "Boil for 10 minutes and serve hot.",
+    "category": "Breakfast",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Huevos Rancheros",
+    "description": "Satisfying and wholesome.",
+    "image": "https://source.unsplash.com/400x300/?food,57",
+    "ingredients": ["Chicken", "Garlic", "Onion", "Spices", "Olive Oil"],
+    "method": "Chill in the fridge before serving.",
+    "category": "Dinner",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Vegetable Stir Fry",
+    "description": "Bursting with taste and texture.",
+    "image": "https://source.unsplash.com/400x300/?food,58",
+    "ingredients": ["Chicken", "Garlic", "Onion", "Spices", "Olive Oil"],
+    "method": "Grill until cooked through.",
+    "category": "Dinner",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Scrambled Eggs",
+    "description": "A family favorite!",
+    "image": "https://source.unsplash.com/400x300/?food,59",
+    "ingredients": ["Chicken", "Garlic", "Onion", "Spices", "Olive Oil"],
+    "method": "Mix all ingredients and cook until golden brown.",
+    "category": "Dinner",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Custard",
+    "description": "Satisfying and wholesome.",
+    "image": "https://source.unsplash.com/400x300/?food,60",
+    "ingredients": ["Apples", "Cinnamon", "Sugar", "Butter", "Flour"],
+    "method": "Mix all ingredients and cook until golden brown.",
+    "category": "Dinner",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Cheeseburger",
+    "description": "A delicious and easy-to-make dish.",
+    "image": "https://source.unsplash.com/400x300/?food,61",
+    "ingredients": ["Tomatoes", "Basil", "Parmesan", "Pasta", "Salt"],
+    "method": "Grill until cooked through.",
+    "category": "Dessert",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Miso Soup",
+    "description": "A must-try dish for food lovers.",
+    "image": "https://source.unsplash.com/400x300/?food,62",
+    "ingredients": ["Bread", "Cheese", "Tomatoes", "Basil", "Olive Oil"],
+    "method": "Boil for 10 minutes and serve hot.",
+    "category": "Dessert",
+    "difficulty": "Easy",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Fruit Salad",
+    "description": "Satisfying and wholesome.",
+    "image": "https://source.unsplash.com/400x300/?food,63",
+    "ingredients": ["Rice", "Vegetables", "Soy Sauce", "Eggs", "Chicken"],
+    "method": "Simmer for 30 minutes on low heat.",
+    "category": "Lunch",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Stuffed Peppers",
+    "description": "Quick and simple recipe.",
+    "image": "https://source.unsplash.com/400x300/?food,64",
+    "ingredients": ["Salmon", "Lemon", "Herbs", "Salt", "Pepper"],
+    "method": "Roast in the oven for 40 minutes.",
+    "category": "Dessert",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Gyoza",
+    "description": "Satisfying and wholesome.",
+    "image": "https://source.unsplash.com/400x300/?food,65",
+    "ingredients": ["Tomatoes", "Basil", "Parmesan", "Pasta", "Salt"],
+    "method": "Fry until crispy and golden.",
+    "category": "Lunch",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Crepes",
+    "description": "Quick and simple recipe.",
+    "image": "https://source.unsplash.com/400x300/?food,66",
+    "ingredients": ["Tomatoes", "Basil", "Parmesan", "Pasta", "Salt"],
+    "method": "Mix all ingredients and cook until golden brown.",
+    "category": "Breakfast",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Minestrone Soup",
+    "description": "Ideal for a healthy meal.",
+    "image": "https://source.unsplash.com/400x300/?food,67",
+    "ingredients": ["Apples", "Cinnamon", "Sugar", "Butter", "Flour"],
+    "method": "Saute the onions and garlic, then add the rest.",
+    "category": "Breakfast",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Paella",
+    "description": "A classic dish with a modern twist.",
+    "image": "https://source.unsplash.com/400x300/?food,68",
+    "ingredients": ["Chocolate", "Cream", "Sugar", "Vanilla", "Eggs"],
+    "method": "Boil for 10 minutes and serve hot.",
+    "category": "Dessert",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Vanilla Pudding",
+    "description": "A family favorite!",
+    "image": "https://source.unsplash.com/400x300/?food,69",
+    "ingredients": ["Chocolate", "Cream", "Sugar", "Vanilla", "Eggs"],
+    "method": "Mix all ingredients and cook until golden brown.",
+    "category": "Dessert",
+    "difficulty": "Easy",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Raspberry Tart",
+    "description": "A family favorite!",
+    "image": "https://source.unsplash.com/400x300/?food,70",
+    "ingredients": ["Salmon", "Lemon", "Herbs", "Salt", "Pepper"],
+    "method": "Mix all ingredients and cook until golden brown.",
+    "category": "Breakfast",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Omelette",
+    "description": "Bursting with taste and texture.",
+    "image": "https://source.unsplash.com/400x300/?food,71",
+    "ingredients": ["Bread", "Cheese", "Tomatoes", "Basil", "Olive Oil"],
+    "method": "Fry until crispy and golden.",
+    "category": "Dinner",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Pecan Pie",
+    "description": "Bursting with taste and texture.",
+    "image": "https://source.unsplash.com/400x300/?food,72",
+    "ingredients": [
+      "Milk",
+      "Cocoa Powder",
+      "Sugar",
+      "Whipped Cream",
+      "Vanilla"
+    ],
+    "method": "Boil for 10 minutes and serve hot.",
+    "category": "Breakfast",
+    "difficulty": "Easy",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Beef Stew",
+    "description": "Perfect for any occasion.",
+    "image": "https://source.unsplash.com/400x300/?food,73",
+    "ingredients": ["Bread", "Cheese", "Tomatoes", "Basil", "Olive Oil"],
+    "method": "Boil for 10 minutes and serve hot.",
+    "category": "Breakfast",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Grilled Chicken",
+    "description": "A delicious and easy-to-make dish.",
+    "image": "https://source.unsplash.com/400x300/?food,74",
+    "ingredients": ["Salmon", "Lemon", "Herbs", "Salt", "Pepper"],
+    "method": "Grill until cooked through.",
+    "category": "Dinner",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Garlic Bread",
+    "description": "Satisfying and wholesome.",
+    "image": "https://source.unsplash.com/400x300/?food,75",
+    "ingredients": [
+      "Milk",
+      "Cocoa Powder",
+      "Sugar",
+      "Whipped Cream",
+      "Vanilla"
+    ],
+    "method": "Fry until crispy and golden.",
+    "category": "Dinner",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Cheesecake",
+    "description": "Perfect for any occasion.",
+    "image": "https://source.unsplash.com/400x300/?food,76",
+    "ingredients": ["Chicken", "Garlic", "Onion", "Spices", "Olive Oil"],
+    "method": "Fry until crispy and golden.",
+    "category": "Lunch",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Huevos Rancheros",
+    "description": "Perfect for any occasion.",
+    "image": "https://source.unsplash.com/400x300/?food,77",
+    "ingredients": ["Apples", "Cinnamon", "Sugar", "Butter", "Flour"],
+    "method": "Chill in the fridge before serving.",
+    "category": "Dessert",
+    "difficulty": "Easy",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Lamb Chops",
+    "description": "A delicious and easy-to-make dish.",
+    "image": "https://source.unsplash.com/400x300/?food,78",
+    "ingredients": ["Chicken", "Garlic", "Onion", "Spices", "Olive Oil"],
+    "method": "Boil for 10 minutes and serve hot.",
+    "category": "Dessert",
+    "difficulty": "Easy",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Pasta Carbonara",
+    "description": "A delicious and easy-to-make dish.",
+    "image": "https://source.unsplash.com/400x300/?food,79",
+    "ingredients": ["Tomatoes", "Basil", "Parmesan", "Pasta", "Salt"],
+    "method": "Bake at 180C for 25 minutes.",
+    "category": "Dinner",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Cinnamon Rolls",
+    "description": "Perfect for any occasion.",
+    "image": "https://source.unsplash.com/400x300/?food,80",
+    "ingredients": ["Salmon", "Lemon", "Herbs", "Salt", "Pepper"],
+    "method": "Chill in the fridge before serving.",
+    "category": "Dessert",
+    "difficulty": "Easy",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Greek Yogurt Parfait",
+    "description": "A family favorite!",
+    "image": "https://source.unsplash.com/400x300/?food,81",
+    "ingredients": ["Chocolate", "Cream", "Sugar", "Vanilla", "Eggs"],
+    "method": "Mix all ingredients and cook until golden brown.",
+    "category": "Lunch",
+    "difficulty": "Easy",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Lamb Chops",
+    "description": "Rich in flavor and nutrition.",
+    "image": "https://source.unsplash.com/400x300/?food,82",
+    "ingredients": ["Bread", "Cheese", "Tomatoes", "Basil", "Olive Oil"],
+    "method": "Fry until crispy and golden.",
+    "category": "Dessert",
+    "difficulty": "Easy",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Beef Wellington",
+    "description": "Bursting with taste and texture.",
+    "image": "https://source.unsplash.com/400x300/?food,83",
+    "ingredients": ["Rice", "Vegetables", "Soy Sauce", "Eggs", "Chicken"],
+    "method": "Mix all ingredients and cook until golden brown.",
+    "category": "Lunch",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "BBQ Ribs",
+    "description": "Ideal for a healthy meal.",
+    "image": "https://source.unsplash.com/400x300/?food,84",
+    "ingredients": [
+      "Milk",
+      "Cocoa Powder",
+      "Sugar",
+      "Whipped Cream",
+      "Vanilla"
+    ],
+    "method": "Mix all ingredients and cook until golden brown.",
+    "category": "Lunch",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Gnocchi",
+    "description": "A classic dish with a modern twist.",
+    "image": "https://source.unsplash.com/400x300/?food,85",
+    "ingredients": ["Rice", "Vegetables", "Soy Sauce", "Eggs", "Chicken"],
+    "method": "Roast in the oven for 40 minutes.",
+    "category": "Dinner",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Pulled Pork",
+    "description": "Rich in flavor and nutrition.",
+    "image": "https://source.unsplash.com/400x300/?food,86",
+    "ingredients": ["Flour", "Eggs", "Milk", "Sugar", "Butter"],
+    "method": "Grill until cooked through.",
+    "category": "Lunch",
+    "difficulty": "Easy",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Sushi Rolls",
+    "description": "Satisfying and wholesome.",
+    "image": "https://source.unsplash.com/400x300/?food,87",
+    "ingredients": ["Salmon", "Lemon", "Herbs", "Salt", "Pepper"],
+    "method": "Boil for 10 minutes and serve hot.",
+    "category": "Dessert",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Spaghetti Bolognese",
+    "description": "Satisfying and wholesome.",
+    "image": "https://source.unsplash.com/400x300/?food,88",
+    "ingredients": ["Bread", "Cheese", "Tomatoes", "Basil", "Olive Oil"],
+    "method": "Roast in the oven for 40 minutes.",
+    "category": "Dessert",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Key Lime Pie",
+    "description": "A must-try dish for food lovers.",
+    "image": "https://source.unsplash.com/400x300/?food,89",
+    "ingredients": [
+      "Milk",
+      "Cocoa Powder",
+      "Sugar",
+      "Whipped Cream",
+      "Vanilla"
+    ],
+    "method": "Boil for 10 minutes and serve hot.",
+    "category": "Dinner",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Chocolate Cake",
+    "description": "A must-try dish for food lovers.",
+    "image": "https://source.unsplash.com/400x300/?food,90",
+    "ingredients": [
+      "Milk",
+      "Cocoa Powder",
+      "Sugar",
+      "Whipped Cream",
+      "Vanilla"
+    ],
+    "method": "Saute the onions and garlic, then add the rest.",
+    "category": "Dessert",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Chicken Curry",
+    "description": "Bursting with taste and texture.",
+    "image": "https://source.unsplash.com/400x300/?food,91",
+    "ingredients": [
+      "Milk",
+      "Cocoa Powder",
+      "Sugar",
+      "Whipped Cream",
+      "Vanilla"
+    ],
+    "method": "Mix all ingredients and cook until golden brown.",
+    "category": "Breakfast",
+    "difficulty": "Easy",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Roast Beef",
+    "description": "A classic dish with a modern twist.",
+    "image": "https://source.unsplash.com/400x300/?food,92",
+    "ingredients": ["Rice", "Vegetables", "Soy Sauce", "Eggs", "Chicken"],
+    "method": "Bake at 180C for 25 minutes.",
+    "category": "Dinner",
+    "difficulty": "Easy",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Tiramisu",
+    "description": "Perfect for any occasion.",
+    "image": "https://source.unsplash.com/400x300/?food,93",
+    "ingredients": ["Salmon", "Lemon", "Herbs", "Salt", "Pepper"],
+    "method": "Roast in the oven for 40 minutes.",
+    "category": "Lunch",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Butter Chicken",
+    "description": "A must-try dish for food lovers.",
+    "image": "https://source.unsplash.com/400x300/?food,94",
+    "ingredients": ["Chicken", "Garlic", "Onion", "Spices", "Olive Oil"],
+    "method": "Simmer for 30 minutes on low heat.",
+    "category": "Dessert",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Miso Soup",
+    "description": "A must-try dish for food lovers.",
+    "image": "https://source.unsplash.com/400x300/?food,95",
+    "ingredients": ["Chicken", "Garlic", "Onion", "Spices", "Olive Oil"],
+    "method": "Boil for 10 minutes and serve hot.",
+    "category": "Dessert",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Lentil Soup",
+    "description": "Satisfying and wholesome.",
+    "image": "https://source.unsplash.com/400x300/?food,96",
+    "ingredients": ["Chicken", "Garlic", "Onion", "Spices", "Olive Oil"],
+    "method": "Simmer for 30 minutes on low heat.",
+    "category": "Dessert",
+    "difficulty": "Easy",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Tiramisu",
+    "description": "Rich in flavor and nutrition.",
+    "image": "https://source.unsplash.com/400x300/?food,97",
+    "ingredients": ["Flour", "Eggs", "Milk", "Sugar", "Butter"],
+    "method": "Bake at 180C for 25 minutes.",
+    "category": "Dinner",
+    "difficulty": "Hard",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Mango Sorbet",
+    "description": "A classic dish with a modern twist.",
+    "image": "https://source.unsplash.com/400x300/?food,98",
+    "ingredients": ["Chocolate", "Cream", "Sugar", "Vanilla", "Eggs"],
+    "method": "Bake at 180C for 25 minutes.",
+    "category": "Lunch",
+    "difficulty": "Medium",
+    "author": "67d88518181026eff1d94a32"
+  },
+  {
+    "title": "Chicken Teriyaki",
+    "description": "A must-try dish for food lovers.",
+    "image": "https://source.unsplash.com/400x300/?food,99",
+    "ingredients": ["Flour", "Eggs", "Milk", "Sugar", "Butter"],
+    "method": "Bake at 180C for 25 minutes.",
+    "category": "Dinner",
+    "difficulty": "Easy",
+    "author": "67d88518181026eff1d94a32"
+  }
+]

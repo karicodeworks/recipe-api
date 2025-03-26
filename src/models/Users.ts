@@ -14,6 +14,8 @@ export interface IUser extends Document {
   verificationToken: string
   isVerified: boolean
   verifiedAt: Date
+  passwordToken: String
+  passwordTokenExpiry: Date
   comparePassword(candidatePassword: string): Promise<boolean>
 }
 
@@ -51,6 +53,12 @@ const UserSchema = new Schema<IUser>(
       default: false,
     },
     verifiedAt: {
+      type: Date,
+    },
+    passwordToken: {
+      type: String,
+    },
+    passwordTokenExpiry: {
       type: Date,
     },
     recipes: [

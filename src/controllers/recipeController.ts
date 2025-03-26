@@ -1,5 +1,5 @@
 import { NextFunction, query, Request, Response } from "express"
-import Recipe, { IRecipe } from "../models/Recipe"
+import Recipe from "../models/Recipe"
 import { StatusCodes } from "http-status-codes"
 import CustomError from "../errors"
 import { checkPermission } from "../utils"
@@ -16,7 +16,7 @@ const createRecipe = async (
     const {
       title,
       description,
-      imageUrl,
+      image,
       ingredients,
       method,
       category,
@@ -26,7 +26,7 @@ const createRecipe = async (
     if (
       !title ||
       !description ||
-      !imageUrl ||
+      !image ||
       !Array.isArray(ingredients) ||
       !method ||
       !category
@@ -39,7 +39,7 @@ const createRecipe = async (
       const recipe = new Recipe({
         title,
         description,
-        imageUrl,
+        image,
         ingredients,
         method,
         category,

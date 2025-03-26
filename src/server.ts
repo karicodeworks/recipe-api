@@ -1,5 +1,5 @@
-import app from './app'
-import connectDB from './db/connect'
+import app from "./app"
+import connectDB from "./db/connect"
 
 const start = async (): Promise<void> => {
   try {
@@ -7,7 +7,7 @@ const start = async (): Promise<void> => {
     const url = process.env.MONGO_URI
 
     if (!url) {
-      throw new Error('Database URL not found in .env file')
+      throw new Error("Database URL not found in .env file")
     }
 
     await connectDB(url)
